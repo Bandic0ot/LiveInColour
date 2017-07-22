@@ -110,7 +110,8 @@ body {
 	text-align: center;
 	vertical-align: center;
 	width: 70%;
-	margin: 5% auto;
+	height: 100%;
+	margin: 1% auto;
 	border-spacing: 4.375rem 4.375rem;
 }
 
