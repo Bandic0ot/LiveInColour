@@ -14,7 +14,7 @@ body {
 	padding: 0;
 	font-family: "Quicksand", sans-serif;
 	color: white;
-	/*border: 1px solid white;*/
+	/*border: 1px solid red;*/
 }
 
 /*-------- Navgiation Section --------*/
@@ -125,23 +125,35 @@ body {
 }
 
 /*-------- Contact Section --------*/
+.contact-background {
+	height: 100%;
+	overflow: hidden;
+}
+
+.contact-content {
+	width: 80%;
+	text-align: center;
+	margin: 25% auto;
+}
+
 .media-bar {
 	list-style-type: none;
-	width: 80%;
-	margin: 50% auto;
-	display: flex;
 	justify-content: center;
+	display: flex;
+}
+
+.email {
+	font-size: 1.50rem;
 }
 
 .media-button {
-	width: 100px;
-	height: 100px;
+		margin: 0 5%;
 }
+
 .media-button img {
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	border-radius: 100%;
-	display: block;
 }
 
 .media-button img:hover {
