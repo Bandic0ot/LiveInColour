@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Quicksand", sans-serif;
+	text-align: center;
 	color: white;
 	/*border: 1px solid red;*/
 }
@@ -27,8 +28,7 @@ body {
 }
 
 .navbutton {
-	text-align: center;
-	padding: 0.875rem 1rem;
+	padding: 0.875rem 1.00rem;
 	width: 6.50rem;
 	text-decoration: none;
 	float: left;
@@ -39,6 +39,11 @@ body {
 	background-color: rgba(0,0,0,0.5);
 }
 
+/*-------- Framework --------*/
+.content-container {
+	width: 50%;
+}
+
 /*-------- Landing Page --------*/
 .landing {
 	height: 100%;
@@ -47,7 +52,6 @@ body {
 
 .main-text {
 	font-size: 5.00rem;
-	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -62,9 +66,8 @@ body {
 }
 
 .content {
-	text-align: center;
 	font-size: 2.00rem;
-	width: 60%;
+	width: 50%;
 	padding: 2%;
 	margin: 20% auto;
 	position: relative;
@@ -90,10 +93,8 @@ body {
 }
 
 .textbox {
-	text-align: center;
 	font-size: 1.50rem;
 	padding: 2%;
-	width: 60.0rem;
 	margin: 5% auto;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -106,22 +107,26 @@ body {
 }
 
 .picture-grid {
-	text-align: center;
-	vertical-align: center;
-	width: 70%;
-	height: 100%;
-	margin: 1% auto;
-	border-spacing: 4.375rem;
+	width: 50%;
+	margin: 12% auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .picture-grid img{
-	padding: 0;
 	width: 100%;
 	display: block;
 }
 
-.picture-grid td:hover {
-	transform: scale(1.25);
+.cell {
+	width: 25%;
+	margin: 2.5% 3%;
+	overflow: hidden;
+}
+
+.cell img:hover {
+	transform: scale(1.15);
 }
 
 .main-modal {
@@ -139,7 +144,6 @@ body {
 	width: 70%;
 	height: 70%;
 	margin: 5% auto;
-	background: url("images/Angkor Hall.jpg") center/cover no-repeat;
 }
 
 /*-------- Contact Section --------*/
@@ -149,8 +153,6 @@ body {
 }
 
 .contact-content {
-	width: 80%;
-	text-align: center;
 	margin: 25% auto;
 }
 
@@ -165,7 +167,7 @@ body {
 }
 
 .media-button {
-		margin: 0 5%;
+	margin: 0 5%;
 }
 
 .media-button img {
@@ -181,7 +183,43 @@ body {
 /*-------- Footer Section --------*/
 footer {
 	font-size: 18px;
-	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
+}
+
+/*-------- Phone Response --------*/
+@media only screen and (max-width: 500px) {
+	.portfolio-background {
+		overflow: auto;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.picture-grid {
+		width: 80%;
+	}
+
+	.cell {
+		width: 100%;
+		margin: 2.5% 3%;
+	}
+}
+
+/*-------- Tablet Response --------*/
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+	.portfolio-background {
+		overflow: auto;
+	}
+
+	.picture-grid {
+		width: 100%;
+		height: 80%;
+		margin: 10% auto;
+	}
+
+	.cell {
+		width: 30%;
+	}
 }
