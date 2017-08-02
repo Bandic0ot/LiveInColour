@@ -18,74 +18,63 @@ body {
 	/*border: 1px solid red;*/
 }
 
+/*-------- Framework --------*/
+.content-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content-box {
+	width: 60%;
+}
+
 /*-------- Navgiation Section --------*/
 .navbar {
 	background-color: rgba(45, 45, 45, 0.0);
-	list-style-type: none;
 	position: fixed;
-	width: 100%;
-	height: 5%;
 	z-index: 1000;
-	display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 }
-
 .navbutton {
-	width: 6.50rem;
-	text-decoration: none;
+	display: flex;
 	justify-content: center;
+	align-items: center;
+	width: 6.00rem;
+	height: 3.00rem;
 }
 
 .navbutton:hover {
 	background-color: rgba(0,0,0,0.5);
 }
 
-/*-------- Framework --------*/
-.content-container {
-	width: 50%;
-}
-
-/*-------- Landing Page --------*/
+/*-------- Landing Section --------*/
 .landing {
 	height: 100%;
-	background: url("@@@@images/Angkor Hall.jpg") center/cover no-repeat fixed;
+	background: url("images/Angkor Hall.jpg") center/cover no-repeat fixed;
+	align-items: center;
 }
 
 .main-text {
 	font-size: 5.00rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.pull-section {
-	width: 100%;
-	height: 100%;
-	background: url("@@@@images/low-poly.jpg") center/cover no-repeat;
-	overflow: hidden;
-}
-
-.content {
-	font-size: 2.00rem;
-	width: 50%;
-	padding: 2%;
-	margin: 20% auto;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*-------- About Me Section --------*/
 .aboutme-background {
-	height: 100%;
-	background: url("@@@@images/low-poly.jpg") center/cover no-repeat;
+	background: url("images/RainyStreet.png") center/cover no-repeat fixed;
+	flex-direction: column;
 	overflow: hidden;
 }
 
+.aboutme-header {
+	margin: 2.5%;
+}
+
 .self-portrait {
-	width: 20.0rem;
-	height: 20.0rem;
-	margin: 10% auto;
+	width: 15.0rem;
+	height: 15.0rem;
+	align-self: center;
 }
 
 .self-portrait img {
@@ -94,21 +83,26 @@ body {
 }
 
 .textbox {
-	font-size: 1.50rem;
+	font-size: 1.30rem;
+	margin: 2.5%;
 	padding: 2%;
-	margin: 5% auto;
 	background-color: rgba(0, 0, 0, 0.5);
+	align-self: center;
 }
 
 /*-------- Portfolio Section --------*/
+/* TODO Finish converting rest of sections to flex. */
 .portfolio-background {
-	height: 100%;
-	background: url("@@@@images/low-poly.jpg") center/cover no-repeat;
+	background: url("images/Angkor Hall.jpg") center/cover no-repeat fixed;
+	flex-direction: column;
 	overflow: hidden;
 }
 
+.portfolio-header {
+	margin: 2.5%;
+}
+
 .picture-grid {
-	width: 50%;
 	margin: 12% auto;
 	display: flex;
 	flex-wrap: wrap;
