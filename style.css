@@ -52,7 +52,7 @@ body {
 /*-------- Landing Section --------*/
 .landing {
 	height: 100%;
-	background: url("images/Angkor Hall.jpg") center/cover no-repeat fixed;
+	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
 	align-items: center;
 }
 
@@ -62,7 +62,8 @@ body {
 
 /*-------- About Me Section --------*/
 .aboutme-background {
-	background: url("images/RainyStreet.png") center/cover no-repeat fixed;
+	background: url("images/door.jpg") center/cover no-repeat fixed;
+	height: 100%;
 	flex-direction: column;
 	overflow: hidden;
 }
@@ -91,9 +92,9 @@ body {
 }
 
 /*-------- Portfolio Section --------*/
-/* TODO Finish converting rest of sections to flex. */
 .portfolio-background {
-	background: url("images/Angkor Hall.jpg") center/cover no-repeat fixed;
+	background: url("images/coffee.jpg") center/cover no-repeat fixed;
+	height: 100%;
 	flex-direction: column;
 	overflow: hidden;
 }
@@ -103,10 +104,12 @@ body {
 }
 
 .picture-grid {
-	margin: 12% auto;
+	margin: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-self: center;
 }
 
 .picture-grid img{
@@ -123,13 +126,11 @@ body {
 .cell img:hover {
 	transform: scale(1.15);
 }
-
+/* TODO Fix modal positioning. */
 .main-modal {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	top: 0;
-	left: 0;
 	display: none;
 	z-index: 1001;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -143,26 +144,29 @@ body {
 
 /*-------- Contact Section --------*/
 .contact-background {
+	background: url("images/fire.jpg") center/cover no-repeat fixed;
+	flex-direction: column;
 	height: 100%;
 	overflow: hidden;
 }
 
-.contact-content {
-	margin: 25% auto;
+.contact-header {
+	margin: 2.5%;
 }
 
-.media-bar {
+.contact-bar {
+	margin: 10%;
+	align-self: center;
+}
+
+.button-bar {
 	list-style-type: none;
-	justify-content: center;
 	display: flex;
+	justify-content: space-around;
 }
 
 .email {
 	font-size: 1.50rem;
-}
-
-.media-button {
-	margin: 0 5%;
 }
 
 .media-button img {
@@ -182,6 +186,7 @@ footer {
 	width: 100%;
 }
 
+/* TODO Finish responsive design. */
 /*-------- Phone Response --------*/
 @media only screen and (max-width: 500px) {
 	.portfolio-background {
