@@ -38,6 +38,7 @@ body {
 	justify-content: flex-end;
 }
 .navbutton {
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -223,4 +224,10 @@ footer {
 		width: 30%;
 	}
 }
-}
+
+/* TODO Compress images for more effecient page. */
+/* TODO Add custom scrollbar. */
+/* TODO Add social media button functionality. */
+/* TODO Fix modal positioning. */
+/* TODO Add navbar transition when scrolling. */
+/* TODO Add Live In Colour fade when scrolling. */

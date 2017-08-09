@@ -4,13 +4,6 @@ var image = document.getElementById("modalImage");
 var clickCell = document.getElementsByClassName("cell");
 
 //-------- Functions --------
-
-for(let i = 0; i < clickCell.length; i++) {
-  clickCell[i].addEventListener("click", function() {
-    showModal(i);
-  });
-}
-
 function showModal(x) {
   switch (x) {
     case 0:
@@ -50,4 +43,12 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+window.onload = function(event) {
+  for(let i = 0; i < clickCell.length; i++) {
+    clickCell[i].addEventListener("click", function() {
+      showModal(i);
+    });
+  }
 }
