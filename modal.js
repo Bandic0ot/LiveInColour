@@ -36,7 +36,7 @@ function showModal(x) {
     default:
       break;
   }
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 
 window.onclick = function(event) {

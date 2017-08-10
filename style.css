@@ -34,7 +34,6 @@ body {
 .navbar {
 	background-color: rgba(45, 45, 45, 0.0);
 	position: fixed;
-	z-index: 1000;
 	justify-content: flex-end;
 }
 .navbutton {
@@ -127,18 +126,17 @@ body {
 .cell img:hover {
 	transform: scale(1.15);
 }
-/* TODO Fix modal positioning. */
+
 .main-modal {
 	height: 100%;
-	width: 100%;
-	position: absolute;
+	position: fixed;
+	top: 0;
 	display: none;
 	z-index: 1001;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-image {
-	width: 70%;
 	height: 70%;
 	margin: 5% auto;
 }
@@ -228,6 +226,6 @@ footer {
 /* TODO Compress images for more effecient page. */
 /* TODO Add custom scrollbar. */
 /* TODO Add social media button functionality. */
-/* TODO Fix modal positioning. */
+/* TODO Add exit button for modal image. */
 /* TODO Add navbar transition when scrolling. */
 /* TODO Add Live In Colour fade when scrolling. */
