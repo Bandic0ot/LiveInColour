@@ -1,6 +1,7 @@
 //-------- Variables --------
 var modal = document.getElementById("mainModal");
 var image = document.getElementById("modalImage");
+var close = document.getElementById("closeButton");
 var clickCell = document.getElementsByClassName("cell");
 
 //-------- Functions --------
@@ -40,7 +41,7 @@ function showModal(x) {
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == close) {
         modal.style.display = "none";
     }
 }

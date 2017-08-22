@@ -46,7 +46,7 @@ body {
 }
 
 .navbutton:hover {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*-------- Landing Section --------*/
@@ -127,20 +127,6 @@ body {
 	transform: scale(1.15);
 }
 
-.main-modal {
-	height: 100%;
-	position: fixed;
-	top: 0;
-	display: none;
-	z-index: 1001;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-image {
-	height: 70%;
-	margin: 5% auto;
-}
-
 /*-------- Contact Section --------*/
 .contact-background {
 	background: url("images/fire.jpg") center/cover no-repeat fixed;
@@ -178,11 +164,43 @@ body {
 	background-color: white;
 }
 
+/*-------- Modal Section --------*/
+.main-modal {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-image {
+	width: 80%;
+	height: 80%;
+	align-self: center;
+}
+
+.close-button {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 2.00rem;
+	margin: 0.5% 2%;
+	float: right;
+}
+
+.close-button:hover {
+	color: #FFF;
+	cursor: pointer;
+}
+
 /*-------- Footer Section --------*/
 footer {
 	font-size: 18px;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
+}
+
+@keyframes fade {
+	from {opacity: 1;}
+	to {opacity: 0;}
 }
 
 /* TODO Finish responsive design. */
@@ -226,6 +244,5 @@ footer {
 /* TODO Compress images for more effecient page. */
 /* TODO Add custom scrollbar. */
 /* TODO Add social media button functionality. */
-/* TODO Add exit button for modal image. */
 /* TODO Add navbar transition when scrolling. */
 /* TODO Add Live In Colour fade when scrolling. */
