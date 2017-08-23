@@ -46,7 +46,7 @@ window.onclick = function(event) {
     }
 }
 
-window.onload = function(event) {
+window.onload = function() {
   for(let i = 0; i < clickCell.length; i++) {
     clickCell[i].addEventListener("click", function() {
       showModal(i);

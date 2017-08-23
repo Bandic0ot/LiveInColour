@@ -23,11 +23,12 @@ body {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	/*justify-content: space-around;*/
 }
 
 .content-box {
 	width: 60%;
+	align-self: center;
 }
 
 /*-------- Navgiation Section --------*/
@@ -58,11 +59,12 @@ body {
 
 .main-text {
 	font-size: 5.00rem;
+	position: fixed;
 }
 
 /*-------- About Me Section --------*/
 .aboutme-background {
-	background: url("images/door.jpg") center/cover no-repeat fixed;
+	background: url("images/leaf.jpg") center/cover no-repeat fixed;
 	height: 100%;
 	flex-direction: column;
 	overflow: hidden;
@@ -75,7 +77,6 @@ body {
 .self-portrait {
 	width: 15.0rem;
 	height: 15.0rem;
-	align-self: center;
 }
 
 .self-portrait img {
@@ -88,7 +89,6 @@ body {
 	margin: 2.5%;
 	padding: 2%;
 	background-color: rgba(0, 0, 0, 0.5);
-	align-self: center;
 }
 
 /*-------- Portfolio Section --------*/
@@ -109,7 +109,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.5);
-	align-self: center;
 }
 
 .picture-grid img{
@@ -141,7 +140,6 @@ body {
 
 .contact-bar {
 	margin: 10%;
-	align-self: center;
 }
 
 .button-bar {
@@ -176,7 +174,7 @@ body {
 .modal-image {
 	width: 80%;
 	height: 80%;
-	align-self: center;
+	margin: auto;
 }
 
 .close-button {
