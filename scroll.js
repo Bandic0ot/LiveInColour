@@ -12,38 +12,35 @@ var tick = false;
 //-------- Functions --------
 $(document).ready(function() {
     home.onclick = function() {
-      home.scrollTop = 0;
-      window.scrollTo(0, 0);
+      $("html, body").animate({ scrollTop: $(landingBG).offset().top}, 1000);
     }
 
     about.onclick = function() {
-      about.scrollTop = viewportHeight;
-      window.scrollTo(0, viewportHeight);
+      $("html, body").animate({ scrollTop: $(aboutBG).offset().top}, 1000);
     }
 
     portfolio.onclick = function() {
-      portfolio.scrollTop = viewportHeight * 2;
-      window.scrollTo(0, viewportHeight * 2);
+      $("html, body").animate({ scrollTop: $(portfolioBG).offset().top}, 1000);
     }
 
     contact.onclick = function() {
-      portfolio.scrollTop = viewportHeight * 3;
-      window.scrollTo(0, viewportHeight * 3);
+      $("html, body").animate({ scrollTop: $(contactBG).offset().top}, 1000);
     }
 
     function enableScrollUI(pos) {
-      $(mainText).css("opacity", 1 - $(window).scrollTop() / (viewportHeight / 2.5));
+      var scrollFactor = window.pageYOffset / viewportHeight;
+      $(mainText).css("opacity", 1 - Math.sqrt(window.pageYOffset) * 0.1);
 
-      
-        $(nav).css("background-color", "rgba(45, 45, 45, " + $(window).scrollTop() / viewportHeight + ")");
-        console.log($(nav).css("opacity"));
-
+      if(scrollFactor < 0.8) {
+        $(nav).css("background-color", "rgba(45, 45, 45, " + scrollFactor + ")");
+        console.log(window.pageYOffset);
+      }
     }
 
     // Fade the Live in Colour text
     window.onscroll = function() {
       if(!tick) {
-        previousScrollPos = window.scrollY;
+        previousScrollPos = window.pageYOffset;
 
         window.requestAnimationFrame(function() {
           enableScrollUI(previousScrollPos);
