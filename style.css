@@ -71,7 +71,7 @@ body {
 }
 
 .aboutme-header {
-	margin: 2.5%;
+	margin-top: 5.0%;
 }
 
 .self-portrait {
@@ -100,7 +100,7 @@ body {
 }
 
 .portfolio-header {
-	margin: 2.5%;
+	margin-top: 5.0%;
 }
 
 .picture-grid {
@@ -135,7 +135,7 @@ body {
 }
 
 .contact-header {
-	margin: 2.5%;
+	margin-top: 5.0%;
 }
 
 .contact-bar {
