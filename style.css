@@ -48,6 +48,10 @@ body {
 
 .navbutton:hover {
 	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 /*-------- Landing Section --------*/
@@ -117,6 +121,7 @@ body {
 }
 
 .cell {
+	cursor: pointer;
 	width: 25%;
 	margin: 2.5% 3%;
 	overflow: hidden;
@@ -124,6 +129,10 @@ body {
 
 .cell img:hover {
 	transform: scale(1.15);
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 /*-------- Contact Section --------*/
@@ -152,14 +161,15 @@ body {
 	font-size: 1.50rem;
 }
 
-.media-button img {
-	width: 75px;
-	height: 75px;
-	border-radius: 100%;
+.media-button:hover #button-fill{
+	fill:  white;
 }
 
-.media-button img:hover {
-	background-color: white;
+.button-fill {
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 /*-------- Modal Section --------*/
@@ -194,11 +204,6 @@ footer {
 	font-size: 18px;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
-}
-
-@keyframes fade {
-	from {opacity: 1;}
-	to {opacity: 0;}
 }
 
 /* TODO Finish responsive design. */
@@ -242,5 +247,3 @@ footer {
 /* TODO Compress images for more effecient page. */
 /* TODO Add custom scrollbar. */
 /* TODO Add social media button functionality. */
-/* TODO Add navbar transition when scrolling. */
-/* TODO Add Live In Colour fade when scrolling. */

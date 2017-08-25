@@ -12,19 +12,19 @@ var tick = false;
 //-------- Functions --------
 $(document).ready(function() {
     home.onclick = function() {
-      $("html, body").animate({ scrollTop: $(landingBG).offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $("#landingBG").offset().top}, 1000);
     }
 
     about.onclick = function() {
-      $("html, body").animate({ scrollTop: $(aboutBG).offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $("#aboutBG").offset().top}, 1000);
     }
 
     portfolio.onclick = function() {
-      $("html, body").animate({ scrollTop: $(portfolioBG).offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $("#portfolioBG").offset().top}, 1000);
     }
 
     contact.onclick = function() {
-      $("html, body").animate({ scrollTop: $(contactBG).offset().top}, 1000);
+      $("html, body").animate({ scrollTop: $("#contactBG").offset().top}, 1000);
     }
 
     function enableScrollUI(pos) {
