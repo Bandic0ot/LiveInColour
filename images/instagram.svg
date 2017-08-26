@@ -3,6 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="75px" height="75px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+
+	<style type="text/css">
+		.button-fill:hover {
+			fill:white;
+		}
+	</style>
+
 <ellipse class="button-fill" fill="#444444" cx="16" cy="16" rx="3.1" ry="3.1"/>
 <path class="button-fill" fill="#444444" d="M19.6,12.9h2.2c0.2,0,0.4-0.2,0.4-0.4v-2.2c0-0.2-0.2-0.4-0.4-0.4h-2.2c-0.2,0-0.4,0.2-0.4,0.4v2.2
 	C19.1,12.7,19.3,12.9,19.6,12.9z"/>
