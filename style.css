@@ -161,15 +161,8 @@ body {
 	font-size: 1.50rem;
 }
 
-.media-button:hover #button-fill{
-	fill:  white;
-}
-
 .button-fill {
-	-webkit-transition: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
+	fill: white;
 }
 
 /*-------- Modal Section --------*/
