@@ -164,17 +164,6 @@ body {
 .media-button {
 	width: 75px;
 	height: 75px;
-	border-radius: 100%;
-	border: #444 2px solid;
-	background-clip: content-box;
-}
-
-.media-button:hover {
-	background-color: white;
-	-webkit-transition: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	transition: 200ms;
-  transition-timing-function: ease-in-out;
 }
 
 /*-------- Modal Section --------*/

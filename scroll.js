@@ -33,7 +33,6 @@ $(document).ready(function() {
 
       if(scrollFactor < 0.8) {
         $(nav).css("background-color", "rgba(45, 45, 45, " + scrollFactor + ")");
-        console.log(window.pageYOffset);
       }
     }
 
