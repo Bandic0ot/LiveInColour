@@ -1,16 +1,10 @@
 //-------- Variables --------
 var modal = document.getElementById("mainModal");
 var image = document.getElementById("modalImage");
+var close = document.getElementById("closeButton");
 var clickCell = document.getElementsByClassName("cell");
 
 //-------- Functions --------
-
-for(let i = 0; i < clickCell.length; i++) {
-  clickCell[i].addEventListener("click", function() {
-    showModal(i);
-  });
-}
-
 function showModal(x) {
   switch (x) {
     case 0:
@@ -43,11 +37,19 @@ function showModal(x) {
     default:
       break;
   }
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == close) {
         modal.style.display = "none";
     }
+}
+
+window.onload = function() {
+  for(let i = 0; i < clickCell.length; i++) {
+    clickCell[i].addEventListener("click", function() {
+      showModal(i);
+    });
+  }
 }
