@@ -29,7 +29,7 @@ function showModal(x) {
       image.style.background = "url('images/Japan Street.jpg') center/cover no-repeat";
       break;
     case 7:
-      image.style.background = "url('images/RainyStreet.png') center/cover no-repeat";
+      image.style.background = "url('images/Rainy Street.png') center/cover no-repeat";
       break;
     case 8:
       image.style.background = "url('images/Elephant Embrace.jpg') center/cover no-repeat";
