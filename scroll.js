@@ -30,6 +30,11 @@ $(document).ready(function() {
     function enableScrollUI(pos) {
       var scrollFactor = window.pageYOffset / viewportHeight;
       $(mainText).css("opacity", 1 - Math.sqrt(window.pageYOffset) * 0.1);
+      if($(mainText).css("opacity") <= 0) {
+        $(mainText).css("display", "none");
+      } else {
+        $(mainText).css("display", "inline");
+      }
 
       if(scrollFactor < 0.8) {
         $(nav).css("background-color", "rgba(45, 45, 45, " + scrollFactor + ")");
