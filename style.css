@@ -106,7 +106,7 @@ body {
 .picture-grid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -118,7 +118,7 @@ body {
 .cell {
 	cursor: pointer;
 	width: 25%;
-	margin: 2% 3%;
+	margin: 3% 3%;
 	border: 1px solid #AAA;
 	overflow: hidden;
 }
@@ -198,34 +198,72 @@ footer {
 /* TODO Finish responsive design. */
 /*-------- Phone Response --------*/
 @media only screen and (max-width: 500px) {
-	.portfolio-background {
-		overflow: auto;
+	/*-------- Phone Framework --------*/
+	.content-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		/*justify-content: space-around;*/
 	}
 
+	.content-box {
+		width: 100%;
+		align-self: center;
+	}
+	/*-------- Navgiation Section --------*/
 	.navbar {
 		display: none;
 	}
 
+	/*-------- Landing Section --------*/
+	/*-------- About Me Section --------*/
+	.aboutme-background {
+		height: auto;
+	}
+
+	.aboutme-header {
+		display: none;
+	}
+	/*-------- Portfolio Section --------*/
+	.portfolio-header {
+		display: none;
+	}
+
+	.portfolio-background {
+		height: auto;
+	}
+
 	.picture-grid {
-		width: 80%;
+		width: 100%;
+		background-color: rgba(0,0,0,0);
 	}
 
 	.cell {
 		width: 100%;
-		margin: 2.5% 3%;
+	}
+
+	/*-------- Contact Section --------*/
+	.contact-header {
+		display: none;
+	}
+
+	/*-------- Modal Section --------*/
+	.main-modal {
+		height: 100%;
+		position: fixed;
+		top: 0;
+		display: none;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 }
 
 /*-------- Tablet Response --------*/
 @media only screen and (max-width: 800px) and (min-width: 500px) {
-	.portfolio-background {
-		overflow: auto;
-	}
 
 	.picture-grid {
 		width: 100%;
 		height: 80%;
-		margin: 10% auto;
+		align-self: center;
 	}
 
 	.cell {
