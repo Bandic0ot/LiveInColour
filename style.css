@@ -100,10 +100,10 @@ body {
 
 .portfolio-header {
 	margin-top: 5.0%;
+	margin-bottom: 2.0%;
 }
 
 .picture-grid {
-	margin: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -118,15 +118,16 @@ body {
 .cell {
 	cursor: pointer;
 	width: 25%;
-	margin: 2.5% 3%;
+	margin: 2% 4%;
+	border: 1px solid #AAA;
 	overflow: hidden;
 }
 
 .cell img:hover {
 	transform: scale(1.15);
-	-webkit-transition: 400ms;
+	-webkit-transition: 700ms;
 	-webkit-transition-timing-function: ease-in-out;
-	transition: 400ms;
+	transition: 700ms;
   transition-timing-function: ease-in-out;
 }
 
