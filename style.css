@@ -37,6 +37,7 @@ body {
 	position: fixed;
 	justify-content: flex-end;
 }
+
 .navbutton {
 	cursor: pointer;
 	display: flex;
@@ -52,6 +53,10 @@ body {
 	-webkit-transition-timing-function: ease-in-out;
 	transition: 200ms;
   transition-timing-function: ease-in-out;
+}
+
+#mobileButton {
+	display: none;
 }
 
 /*-------- Landing Section --------*/
@@ -211,14 +216,25 @@ footer {
 		align-self: center;
 	}
 	/*-------- Navgiation Section --------*/
-	.navbar {
+	.navbutton {
 		display: none;
+		width: 100%;
+	}
+
+	#mobileButton {
+		display: flex;
+		width: 3.00rem;
 	}
 
 	/*-------- Landing Section --------*/
 	/*-------- About Me Section --------*/
 	.aboutme-background {
 		height: auto;
+	}
+
+	.textbox {
+		background: none;
+		width: 90%;
 	}
 
 	.aboutme-header {
@@ -234,8 +250,8 @@ footer {
 	}
 
 	.picture-grid {
-		width: 100%;
-		background-color: rgba(0,0,0,0);
+		width: 90%;
+		background: none;
 	}
 
 	.cell {
@@ -245,6 +261,11 @@ footer {
 	/*-------- Contact Section --------*/
 	.contact-header {
 		display: none;
+	}
+
+	.contact-bar {
+		margin: auto;
+		width: 90%;
 	}
 
 	/*-------- Modal Section --------*/
