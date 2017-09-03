@@ -286,15 +286,6 @@ footer {
 /*-------- Tablet Response --------*/
 @media only screen and (max-width: 800px) and (min-width: 500px) {
 
-	.picture-grid {
-		width: 100%;
-		height: 80%;
-		align-self: center;
-	}
-
-	.cell {
-		width: 30%;
-	}
 }
 
 /*-------- PC Response --------*/

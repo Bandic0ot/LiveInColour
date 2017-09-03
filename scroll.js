@@ -100,7 +100,6 @@ $(document).ready(function() {
 
     // fired on resize event
     function resize() {
-
       if (!running) {
         running = true;
 
@@ -110,12 +109,10 @@ $(document).ready(function() {
           setTimeout(runCallbacks, 66);
         }
       }
-
     }
 
     // run the actual callbacks
     function runCallbacks() {
-
       callbacks.forEach(function(callback) {
         callback();
       });
@@ -125,11 +122,9 @@ $(document).ready(function() {
 
     // adds callback to loop
     function addCallback(callback) {
-
       if (callback) {
         callbacks.push(callback);
       }
-
     }
 
     return {
@@ -145,8 +140,8 @@ $(document).ready(function() {
 
   // start process
   optimizedResize.add(function() {
-    // Reset the inline css of the navbutton so the media query can be
-    // applied properly on window resize.
+    // Reset the inline css of the navbutton class so the media query
+    // can be applied properly on window resize.
     if (window.matchMedia("(min-width: 800px)").matches) {
       $(".navbutton").attr("style", "");
     }
