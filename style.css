@@ -55,7 +55,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
-#mobileButton {
+#mobileBarButton {
 	display: none;
 }
 
@@ -221,9 +221,14 @@ footer {
 		width: 100%;
 	}
 
-	#mobileButton {
+	#mobileBarButton {
 		display: flex;
 		width: 3.00rem;
+	}
+
+	#mobileButtonSVG {
+		width: 2.125rem;
+		height: 2.125rem;
 	}
 
 	/*-------- Landing Section --------*/
@@ -289,6 +294,18 @@ footer {
 
 	.cell {
 		width: 30%;
+	}
+}
+
+/*-------- PC Response --------*/
+@media only screen and (min-width: 800px) {
+	#mobileBarButton {
+		display: none;
+	}
+
+	.navbutton {
+		display: flex;
+		width: 6.00rem;
 	}
 }
 
