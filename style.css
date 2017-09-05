@@ -31,6 +31,10 @@ body {
 	align-self: center;
 }
 
+.section-header {
+	margin: 5.00%;
+}
+
 /*-------- Navgiation Section --------*/
 .navbar {
 	background-color: rgba(45, 45, 45, 0.0);
@@ -52,7 +56,7 @@ body {
 	-webkit-transition: 200ms;
 	-webkit-transition-timing-function: ease-in-out;
 	transition: 200ms;
-  transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
 }
 
 #mobileBarButton {
@@ -73,14 +77,10 @@ body {
 
 /*-------- About Me Section --------*/
 .aboutme-background {
-	background: url("images/leaf.jpg") center/cover no-repeat fixed;
+	background: url("images/pen.jpg") center/cover no-repeat fixed;
 	height: 100%;
 	flex-direction: column;
 	overflow: hidden;
-}
-
-.aboutme-header {
-	margin-top: 5.0%;
 }
 
 .self-portrait {
@@ -90,8 +90,8 @@ body {
 
 .textbox {
 	font-size: 1.30rem;
-	margin: 2.5%;
-	padding: 2%;
+	margin: 0.50%;
+	padding: 2.00%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -103,16 +103,11 @@ body {
 	overflow: hidden;
 }
 
-.portfolio-header {
-	margin-top: 5.0%;
-	margin-bottom: 2.0%;
-}
-
 .picture-grid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1.00%;
 }
 
 .cell img{
@@ -133,7 +128,7 @@ body {
 	-webkit-transition: 700ms;
 	-webkit-transition-timing-function: ease-in-out;
 	transition: 700ms;
-  transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
 }
 
 /*-------- Contact Section --------*/
@@ -142,10 +137,6 @@ body {
 	flex-direction: column;
 	height: 100%;
 	overflow: hidden;
-}
-
-.contact-header {
-	margin-top: 5.0%;
 }
 
 .contact-bar {
@@ -215,6 +206,10 @@ footer {
 		width: 100%;
 		align-self: center;
 	}
+
+	.section-header {
+		display: none;
+	}
 	/*-------- Navgiation Section --------*/
 	.navbutton {
 		display: none;
@@ -227,8 +222,8 @@ footer {
 	}
 
 	#mobileButtonSVG {
-		width: 2.125rem;
-		height: 2.125rem;
+		width: 100%;
+		height: 100%;
 	}
 
 	/*-------- Landing Section --------*/
@@ -242,14 +237,7 @@ footer {
 		width: 90%;
 	}
 
-	.aboutme-header {
-		display: none;
-	}
 	/*-------- Portfolio Section --------*/
-	.portfolio-header {
-		display: none;
-	}
-
 	.portfolio-background {
 		height: auto;
 	}
@@ -264,10 +252,6 @@ footer {
 	}
 
 	/*-------- Contact Section --------*/
-	.contact-header {
-		display: none;
-	}
-
 	.contact-bar {
 		margin: auto;
 		width: 90%;
@@ -285,6 +269,30 @@ footer {
 
 /*-------- Tablet Response --------*/
 @media only screen and (max-width: 800px) and (min-width: 500px) {
+	/*-------- Phone Framework --------*/
+	.section-header {
+		display: none;
+	}
+
+	/*-------- Portfolio Section --------*/
+	.picture-grid {
+		width: 90%;
+		background: none;
+	}
+
+	.cell {
+		cursor: pointer;
+		width: 10.00rem;
+		height: 10.00rem;
+		margin: 3% 3%;
+		border: 1px solid #AAA;
+		overflow: hidden;
+	}
+
+	.cell img {
+		height: 100%;
+	}
+
 
 }
 

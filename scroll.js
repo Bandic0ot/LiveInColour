@@ -1,11 +1,11 @@
 //-------- Variables --------
+var menuBarButton = document.getElementById("mobileButtonSVG");
 var home = document.getElementById("homeButton");
 var about = document.getElementById("aboutButton");
 var portfolio = document.getElementById("portfolioButton");
 var contact = document.getElementById("contactButton");
 var mainText = document.getElementById("liveText");
 var nav = document.getElementById("navBar");
-var menuBarButton = document.getElementById("mobileBarButton");
 var viewportHeight = window.innerHeight;
 var previousScrollPos = 0;
 var tick = false;
