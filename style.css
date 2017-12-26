@@ -15,3 +15,7 @@ body {
 .full-viewport {
 	height: 100%;
 }
+
+.landing {
+	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
+}

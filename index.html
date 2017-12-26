@@ -12,13 +12,17 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
+		<!-- Create a navbar that is fixed to the top of the screen at all times. The navbar switches to
+		a single icon on smaller devices. Also keep the button on the right of the navbar.-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end fixed-top">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+			<!-- Make sure the links are all to the right of the navbar when on desktop and centered,
+			when on mobile. -->
 			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav text-center">
 					<li class="nav-item">
 						<a class="nav-link" href="#"> Home </a>
 					</li>
@@ -35,9 +39,11 @@
 			</div>
 		</nav>
 
-		<div class="container-fluid full-viewport">
-			<div class="row">
-				<div class="col-lg">
+		<!-- Create a container that is 100% the height of the viewport then vertically
+		center the text within the container. -->
+		<div class="container-fluid d-flex align-items-center full-viewport landing">
+			<div class="row ml-5">
+				<div class="col">
 					<h1 class="display-1"> Live In Colour </h1>
 				</div>
 			</div>
