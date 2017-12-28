@@ -12,10 +12,23 @@ body {
 	/*border: 1px solid red;*/
 }
 
+.default-colour {
+	background-color: rgba(45, 45, 45, 0.0);
+}
+
 .full-viewport {
 	height: 100%;
 }
 
+.mt-custom {
+	margin-top: 6.00%;
+}
+
 .landing {
 	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
+}
+
+.lg-thumbnail {
+	width: 15.0rem;
+	height: 15.0rem;
 }
