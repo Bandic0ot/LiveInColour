@@ -1,5 +1,5 @@
 //-------- Variables --------
-var menuBarButton = document.getElementById("mobileButtonSVG");
+var menuBarButton = document.getElementById("mobileButton");
 var home = document.getElementById("homeButton");
 var about = document.getElementById("aboutButton");
 var portfolio = document.getElementById("portfolioButton");
@@ -45,10 +45,10 @@ $(document).ready(function() {
 
   menuBarButton.onclick = function() {
     if(menuIsOpen == true) {
-      $(".navbutton").not("#mobileBarButton").css("display", "none");
+      $(".navbutton").not("#mobileButton").css("display", "none");
       menuIsOpen = false;
     } else {
-      $(".navbutton").not("#mobileBarButton").css("display", "flex");
+      $(".navbutton").not("#mobileButton").css("display", "flex");
       menuIsOpen = true;
     }
   }
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
     // If on mobile when the button is pressed hide the drop down menu.
     if(menuIsOpen == true) {
-      $(".navbutton").not("#mobileBarButton").css("display", "none");
+      $(".navbutton").not("#mobileButton").css("display", "none");
       menuIsOpen = false;
     }
   }
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     // If on mobile when the button is pressed hide the drop down menu.
     if(menuIsOpen == true) {
-      $(".navbutton").not("#mobileBarButton").css("display", "none");
+      $(".navbutton").not("#mobileButton").css("display", "none");
       menuIsOpen = false;
     }
   }
@@ -78,7 +78,7 @@ $(document).ready(function() {
 
     // If on mobile when the button is pressed hide the drop down menu.
     if(menuIsOpen == true) {
-      $(".navbutton").not("#mobileBarButton").css("display", "none");
+      $(".navbutton").not("#mobileButton").css("display", "none");
       menuIsOpen = false;
     }
   }
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
     // If on mobile when the button is pressed hide the drop down menu.
     if(menuIsOpen == true) {
-      $(".navbutton").not("#mobileBarButton").css("display", "none");
+      $(".navbutton").not("#mobileButton").css("display", "none");
       menuIsOpen = false;
     }
   }

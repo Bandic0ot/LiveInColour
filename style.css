@@ -17,18 +17,41 @@ body {
 }
 
 .full-viewport {
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
-.mt-custom {
-	margin-top: 6.00%;
+.pt-custom {
+	padding-top: 6.00%;
 }
 
 .landing {
 	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
 }
 
+.about-me {
+	background: url("images/pen.jpg") center/cover no-repeat fixed;
+}
+
+.portfolio {
+	background: url("images/coffee.jpg") center/cover no-repeat fixed;
+}
+
+.contact {
+	background: url("images/fire.jpg") center/cover no-repeat fixed;
+}
+
 .lg-thumbnail {
 	width: 15.0rem;
 	height: 15.0rem;
+}
+
+.md-thumbnail {
+	width: 15.00rem;
+	height: 12.50rem;
+}
+
+.media-button {
+	width: 4.75rem;
+	height: 4.75rem;
 }

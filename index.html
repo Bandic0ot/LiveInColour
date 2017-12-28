@@ -1,122 +1,155 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Live in Colour </title>
+<head>
+	<title> Live in Colour </title>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
-		<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+	<link rel="stylesheet" href="style.css">
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
 
-	<body>
-		<!-- Create a navbar that is fixed to the top of the screen at all times. The navbar switches to
-		a single icon on smaller devices. Also keep the button on the right of the navbar.-->
-		<nav class="navbar navbar-expand-lg navbar-dark default-colour justify-content-end fixed-top">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<body>
+	<!-- Create a navbar that is fixed to the top of the screen at all times. The navbar switches to
+	a single icon on smaller devices. Also keep the button on the right of the navbar.-->
+	<nav class="navbar navbar-expand-md navbar-dark default-colour justify-content-end fixed-top" id="navBar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="mobileButton">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<!-- Make sure the links are all to the right of the navbar when on desktop and centered,
-			when on mobile. -->
-			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav text-center">
-					<li class="nav-item">
-						<a class="nav-link" href="#"> Home </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"> About Me </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"> Portfolio </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"> Contact </a>
-					</li>
-				</ul>
+		<!-- Make sure the links are all to the right of the navbar when on desktop and centered,
+		when on mobile. -->
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<ul class="navbar-nav text-center">
+				<li class="nav-item" id="homeButton">
+					<a class="nav-link" href="#"> Home </a>
+				</li>
+				<li class="nav-item" id="aboutButton">
+					<a class="nav-link" href="#"> About Me </a>
+				</li>
+				<li class="nav-item" id="portfolioButton">
+					<a class="nav-link" href="#"> Portfolio </a>
+				</li>
+				<li class="nav-item" id="contactButton">
+					<a class="nav-link" href="#"> Contact </a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Create a container that is 100% the height of the viewport then vertically
+	center the text within the container. -->
+	<div class="container-fluid d-flex align-items-center full-viewport landing" id="landingBG">
+		<div class="row">
+			<div class="col-md-12 offset-3">
+				<h1 class="display-1" id="liveText"> Live In Colour </h1>
 			</div>
-		</nav>
+		</div>
+	</div>
 
-		<!-- Create a container that is 100% the height of the viewport then vertically
-		center the text within the container. -->
-		<div class="container-fluid d-flex align-items-center full-viewport landing">
+	<div class="container-fluid full-viewport about-me" id="aboutBG">
+		<div class="row pt-5">
+			<div class="col-8 offset-2 text-center">
+				<h2> About Me </h2>
+			</div>
+		</div>
+		<div class="container pt-5">
+			<div class="row mt-5">
+				<div class="col-8 offset-2">
+					<img class="lg-thumbnail mx-auto d-block rounded" src="http://via.placeholder.com/1920x1080" alt="A picture of me.">
+				</div>
+			</div>
+			<div class="row py-5">
+				<div class="col-8 offset-2">
+					<p> Born and raised in Saskatoon, SK, my whole life I grew up playing
+						video-games. I was always curious as a kid asking "How does this work?"
+						or "How can I make this better?". This curiosity, something I carry with myself
+						to this day, is what drives me. It's what set me down the path of becoming
+						a software developer. <br><br> I work hard and I like to have fun and make
+						friends along the way. I strive to improve myself in every way and will
+						strive to help you make the best product possible. <br><br> I look forward
+						to working with you!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid full-viewport portfolio" id="portfolioBG">
+		<div class="row pt-5">
+			<div class="col-8 offset-2 text-center">
+				<h2> Portfolio </h2>
+			</div>
+		</div>
+		<div class="container pt-5">
+			<div class="row pt-5">
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Angkor Hall.jpg" alt="Angkor Hall">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Pepper Farm.jpg" alt="Pepper Farm">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Look Down.jpg" alt="Look Down">
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-md-12 offset-md-3">
-					<h1 class="display-1"> Live In Colour </h1>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Moonlit Deck.jpg" alt="Moonlit Deck">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Ships.jpg" alt="Ships">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Candlelight.jpg" alt="Candlelight">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Japan Street.jpg" alt="Japanese Street">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Rainy Street.jpg" alt="Rainy Street">
+				</div>
+				<div class="col-md-4 py-3">
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Elephant Embrace.jpg" alt="Elephant Embrace">
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div class="container-fluid full-viewport">
-			<div class="container">
-				<div class="row">
-					<div class="col-8 offset-md-2 text-center">
-						<h2> About Me </h2>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-8 offset-md-2">
-						<img class="lg-thumbnail rounded offset-md-4" src="http://via.placeholder.com/1920x1080" alt="A picture of me.">
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-8 offset-md-2">
-						<p> Born and raised in Saskatoon, SK, my whole life I grew up playing
-							video-games. I was always curious as a kid asking "How does this work?"
-							or "How can I make this better?". This curiosity, something I carry with myself
-							to this day, is what drives me. It's what set me down the path of becoming
-							a software developer. <br><br> I work hard and I like to have fun and make
-							friends along the way. I strive to improve myself in every way and will
-							strive to help you make the best product possible. <br><br> I look forward
-							to working with you!
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--
-		<div>
-			<h2> Portfolio </h2>
-			<div>
-					<div><img src="images/Angkor Hall.jpg" alt="Angkor Hall"></div>
-					<div><img src="images/Pepper Farm.jpg" alt="Pepper Farm"></div>
-					<div><img src="images/Look Down.jpg" alt="Look Down"></div>
-					<div><img src="images/Moonlit Deck.jpg" alt="Moonlit Deck"></div>
-					<div><img src="images/Ships.jpg" alt="Ships"></div>
-					<div><img src="images/Candlelight.jpg" alt="Candlelight"></div>
-					<div><img src="images/Japan Street.jpg" alt="Japanese Street"></div>
-					<div><img src="images/Rainy Street.jpg" alt="Rainy Street"></div>
-					<div><img src="images/Elephant Embrace.jpg" alt="Elephant Embrace"></div>
-			</div>
-		</div>
-
-		<div>
-			<div>
-        <p> &times; </p>
-      </div>
-		</div>
-
-		<div>
+<div class="container-fluid full-viewport contact" id="contactBG">
+	<div class="row pt-5">
+		<div class="col-8 offset-2 text-center">
 			<h2> Contact </h2>
-			<div>
+		</div>
+	</div>
+	<div class="container pt-5">
+		<div class="row pt-5">
+			<div class="col-8 offset-2 text-center">
 				<p> contact@liveincolour.ca </p>
-				<div>
-						<object data="images/github.svg" type="image/svg+xml"></object>
-						<object data="images/instagram.svg" type="image/svg+xml"></object>
-						<object data="images/twitter.svg" type="image/svg+xml"></object>
-				</div>
 			</div>
 		</div>
+		<div class="row pt-5">
+			<object class="col-4 media-button" data="images/github.svg" type="image/svg+xml"></object>
+			<object class="col-4 media-button" data="images/instagram.svg" type="image/svg+xml"></object>
+			<object class="col-4 media-button" data="images/twitter.svg" type="image/svg+xml"></object>
+		</div>
+	</div>
+</div>
 
-    <footer>
-    	<div> Live In Colour &copy; </div>
-    </footer>
-	-->
+<!--
+<footer>
+<div> Live In Colour &copy; </div>
+</footer>
+-->
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	</body>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="scroll.js"></script>
+</body>
 </html>
