@@ -21,8 +21,16 @@ body {
 	height: auto;
 }
 
+.pt-6 {
+	padding-top: 5.00rem;
+}
+
 .pt-custom {
-	padding-top: 6.00%;
+	padding-top: 12.00%;
+}
+
+.material-shade {
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .landing {
