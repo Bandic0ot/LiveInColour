@@ -1,6 +1,8 @@
 //-------- Variables --------
-var image = document.getElementById("modal-image");
+var modal = document.getElementById("mainModal");
+var image = document.getElementById("modalImage");
 var cell = document.getElementsByClassName("md-thumbnail");
+var close = document.getElementById("closeButton");
 
 //-------- Functions --------
 function selectModal(x) {
@@ -35,6 +37,14 @@ function selectModal(x) {
     default:
       break;
   }
+
+    modal.style.display = "flex";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal || event.target == close) {
+        modal.style.display = "none";
+    }
 }
 
 window.onload = function() {

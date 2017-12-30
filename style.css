@@ -75,8 +75,28 @@ body {
 	height: 4.75rem;
 }
 
-.dummy {
-	width: 5.00rem;
-	height: 4.00rem;
-	background: rgba(0, 0, 0, 0);
+.main-modal {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-image {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.close-button {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 2.00rem;
+	margin: 0.5% 2%;
+	float: right;
+}
+
+.close-button:hover {
+	color: #FFF;
+	cursor: pointer;
 }

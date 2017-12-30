@@ -86,9 +86,7 @@
 		<div class="container mt-5">
 			<div class="row pt-3">
 				<div class="col-md-4 py-3">
-					<button type="button" data-toggle="modal" data-target="#projectModal">
-						<img class="md-thumbnail mx-auto d-block rounded" src="images/Angkor Hall.jpg" alt="Angkor Hall">
-					</button>
+					<img class="md-thumbnail mx-auto d-block rounded" src="images/Angkor Hall.jpg" alt="Angkor Hall">
 				</div>
 				<div class="col-md-4 py-3">
 					<img class="md-thumbnail mx-auto d-block rounded" src="images/Pepper Farm.jpg" alt="Pepper Farm">
@@ -143,15 +141,9 @@
 	</div>
 </div>
 
-<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-			<div class="modal-body">
-				<div class="container-fluid" id="modal-image">
-				</div>
-			</div>
-    </div>
-  </div>
+<div class="container-fluid main-modal" id="mainModal">
+	<div class="modal-image" id="modalImage">
+		<p class="close-button"  id="closeButton"> &times; </p>
 </div>
 
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
