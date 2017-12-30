@@ -16,6 +16,14 @@ body {
 	background-color: rgba(45, 45, 45, 0.0);
 }
 
+.text-gray {
+	color: rgba(45, 45, 45, 1.0);
+}
+
+.material-shade {
+	background-color: rgba(188, 219, 190, 0.7);
+}
+
 .full-viewport {
 	min-height: 100%;
 	height: auto;
@@ -27,10 +35,6 @@ body {
 
 .pt-custom {
 	padding-top: 12.00%;
-}
-
-.material-shade {
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .landing {
@@ -49,17 +53,30 @@ body {
 	background: url("images/fire.jpg") center/cover no-repeat fixed;
 }
 
+.lg-modal {
+	width: 30.0rem;
+	height: 20.0rem;
+}
+
 .lg-thumbnail {
 	width: 15.0rem;
 	height: 15.0rem;
+	border: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 .md-thumbnail {
 	width: 15.00rem;
 	height: 12.50rem;
+	border: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 .media-button {
 	width: 4.75rem;
 	height: 4.75rem;
+}
+
+.dummy {
+	width: 5.00rem;
+	height: 4.00rem;
+	background: rgba(0, 0, 0, 0);
 }

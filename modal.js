@@ -1,11 +1,9 @@
 //-------- Variables --------
-var modal = document.getElementById("mainModal");
-var image = document.getElementById("modalImage");
-var close = document.getElementById("closeButton");
-var clickCell = document.getElementsByClassName("cell");
+var image = document.getElementById("modal-image");
+var cell = document.getElementsByClassName("md-thumbnail");
 
 //-------- Functions --------
-function showModal(x) {
+function selectModal(x) {
   switch (x) {
     case 0:
       image.style.background = "url('images/Angkor Hall.jpg') center/cover no-repeat";
@@ -37,19 +35,12 @@ function showModal(x) {
     default:
       break;
   }
-  modal.style.display = "flex";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal || event.target == close) {
-        modal.style.display = "none";
-    }
 }
 
 window.onload = function() {
-  for(let i = 0; i < clickCell.length; i++) {
-    clickCell[i].addEventListener("click", function() {
-      showModal(i);
+  for(let i = 0; i < cell.length; i++) {
+    cell[i].addEventListener("click", function() {
+      selectModal(i);
     });
   }
 }

@@ -51,14 +51,14 @@
 
 	<div class="container-fluid full-viewport about-me" id="aboutBG">
 		<div class="row pt-6 pb-5">
-			<div class="col-8 offset-2 text-center">
+			<div class="col-8 offset-2 text-gray text-center">
 				<h2> About Me </h2>
 			</div>
 		</div>
 		<div class="container pt-2 material-shade">
 			<div class="row mt-5">
 				<div class="col-8 offset-2">
-					<img class="lg-thumbnail mx-auto d-block rounded" src="http://via.placeholder.com/1920x1080" alt="A picture of me.">
+					<img class="lg-thumbnail mx-auto d-block rounded" src="images/me.jpg" alt="A picture of me.">
 				</div>
 			</div>
 			<div class="row py-5">
@@ -79,14 +79,16 @@
 
 	<div class="container-fluid full-viewport portfolio" id="portfolioBG">
 		<div class="row pt-6">
-			<div class="col-8 offset-2 text-center">
+			<div class="col-8 offset-2 text-gray text-center">
 				<h2> Portfolio </h2>
 			</div>
 		</div>
 		<div class="container mt-5">
 			<div class="row pt-3">
 				<div class="col-md-4 py-3">
-					<img class="md-thumbnail mx-auto d-block rounded" src="images/Angkor Hall.jpg" alt="Angkor Hall">
+					<button type="button" data-toggle="modal" data-target="#projectModal">
+						<img class="md-thumbnail mx-auto d-block rounded" src="images/Angkor Hall.jpg" alt="Angkor Hall">
+					</button>
 				</div>
 				<div class="col-md-4 py-3">
 					<img class="md-thumbnail mx-auto d-block rounded" src="images/Pepper Farm.jpg" alt="Pepper Farm">
@@ -123,14 +125,14 @@
 
 <div class="container-fluid full-viewport contact" id="contactBG">
 	<div class="row pt-6">
-		<div class="col-8 offset-2 text-center">
+		<div class="col-8 offset-2 text-gray text-center">
 			<h2> Contact </h2>
 		</div>
 	</div>
 	<div class="container pt-custom">
 		<div class="row pt-5">
 			<div class="col-8 offset-2 text-center">
-				<p> contact@liveincolour.ca </p>
+				<h3> contact@liveincolour.ca </h3>
 			</div>
 		</div>
 		<div class="row py-5">
@@ -141,15 +143,21 @@
 	</div>
 </div>
 
-<!--
-<footer>
-<div> Live In Colour &copy; </div>
-</footer>
--->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+			<div class="modal-body">
+				<div class="container-fluid" id="modal-image">
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
 
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="scroll.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>
