@@ -1,162 +1,87 @@
 html {
 	height: 100%;
 }
-
 body {
 	height: 100%;
-	font-size: 16px;
 	background-color: #323D45;
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 	font-family: "Quicksand", sans-serif;
-	text-align: center;
-	color: white;
+	/*color: white;*/
 	/*border: 1px solid red;*/
 }
 
-/*-------- Framework --------*/
-.content-container {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	/*\justify-content: space-around;*/
-}
-
-.content-box {
-	width: 60%;
-	align-self: center;
-}
-
-.section-header {
-	margin: 6.00%;
-}
-
-/*-------- Navgiation Section --------*/
-.navbar {
+.default-colour {
 	background-color: rgba(45, 45, 45, 0.0);
-	position: fixed;
-	justify-content: flex-end;
 }
 
-.navbutton {
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 6.00rem;
-	height: 3.00rem;
+.text-gray {
+	color: rgba(45, 45, 45, 1.0);
 }
 
-.navbutton:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-	-webkit-transition: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	transition: 200ms;
-	transition-timing-function: ease-in-out;
+.material-shade {
+	background-color: rgba(188, 219, 190, 0.7);
 }
 
-#mobileBarButton {
-	display: none;
+.full-viewport {
+	min-height: 100%;
+	height: auto;
 }
 
-/*-------- Landing Section --------*/
+.pt-6 {
+	padding-top: 5.00rem;
+}
+
+.pt-custom {
+	padding-top: 12.00%;
+}
+
 .landing {
-	height: 100%;
 	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
-	align-items: center;
 }
 
-.main-text {
-	font-size: 5.00rem;
-	position: fixed;
-}
-
-/*-------- About Me Section --------*/
-.aboutme-background {
+.about-me {
 	background: url("images/pen.jpg") center/cover no-repeat fixed;
-	height: 100%;
-	flex-direction: column;
-	overflow: hidden;
 }
 
-.aboutme-background .section-header {
-	margin-bottom: 2.00%;
+.portfolio {
+	background: url("images/coffee.jpg") center/cover no-repeat fixed;
 }
 
-.self-portrait {
+.contact {
+	background: url("images/fire.jpg") center/cover no-repeat fixed;
+}
+
+.lg-modal {
+	width: 30.0rem;
+	height: 20.0rem;
+}
+
+.lg-thumbnail {
 	width: 15.0rem;
 	height: 15.0rem;
-	margin-bottom: 5.00%;
+	border: 4px solid rgba(255, 255, 255, 0.4);
 }
 
-.textbox {
-	font-size: 1.30rem;
-	margin: 0.50%;
-	padding: 2.00%;
+.md-thumbnail {
+	width: 15.00rem;
+	height: 12.50rem;
+	border: 4px solid rgba(255, 255, 255, 0.4);
+	overflow: hidden;
 }
 
-/*-------- Portfolio Section --------*/
-.portfolio-background {
-	background: url("images/coffee.jpg") center/cover no-repeat fixed;
+.img-cell {
 	height: 100%;
-	flex-direction: column;
-	overflow: hidden;
 }
 
-.portfolio-background .section-header {
-	margin-bottom: 1.00%;
-}
-
-.picture-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.cell img{
-	width: 100%;
-	display: block;
-}
-
-.cell {
-	cursor: pointer;
-	width: 25%;
-	margin: 3% 3%;
-	border: 1px solid #AAA;
-	overflow: hidden;
-}
-
-.cell img:hover {
+.img-cell:hover {
 	transform: scale(1.15);
 	-webkit-transition: 700ms;
 	-webkit-transition-timing-function: ease-in-out;
 	transition: 700ms;
 	transition-timing-function: ease-in-out;
-}
-
-/*-------- Contact Section --------*/
-.contact-background {
-	background: url("images/fire.jpg") center/cover no-repeat fixed;
-	flex-direction: column;
-	height: 100%;
-	overflow: hidden;
-}
-
-.contact-bar {
-	margin: 12.0%;
-}
-
-.button-bar {
-	display: flex;
-	justify-content: space-around;
-}
-
-.email {
-	font-size: 1.50rem;
+	cursor: pointer;
 }
 
 .media-button {
@@ -164,13 +89,16 @@ body {
 	height: 4.75rem;
 }
 
-/*-------- Modal Section --------*/
+.media-button:hover {
+	cursor: pointer;
+}
+
 .main-modal {
 	height: 100%;
 	position: fixed;
 	top: 0;
 	display: none;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-image {
@@ -190,133 +118,3 @@ body {
 	color: #FFF;
 	cursor: pointer;
 }
-
-/*-------- Footer Section --------*/
-footer {
-	font-size: 1.125rem;
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
-}
-
-/* TODO Finish responsive design. */
-/*-------- Phone Response --------*/
-@media only screen and (max-width: 500px) {
-	/*-------- Phone Framework --------*/
-	.content-container {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		/*justify-content: space-around;*/
-	}
-
-	.content-box {
-		width: 100%;
-		align-self: center;
-	}
-
-	.section-header {
-		display: none;
-	}
-	/*-------- Navgiation Section --------*/
-	.navbutton {
-		display: none;
-		width: 100%;
-	}
-
-	#mobileBarButton {
-		display: flex;
-		width: 3.00rem;
-	}
-
-	#mobileButtonSVG {
-		width: 100%;
-		height: 100%;
-	}
-
-	/*-------- About Me Section --------*/
-	.aboutme-background {
-		height: auto;
-	}
-
-	.textbox {
-		margin: 15% auto;
-		background: none;
-		width: 90%;
-	}
-
-	/*-------- Portfolio Section --------*/
-	.portfolio-background {
-		height: auto;
-	}
-
-	.picture-grid {
-		margin: 15% auto;
-		width: 90%;
-		background: none;
-	}
-
-	.cell {
-		width: 100%;
-	}
-
-	/*-------- Contact Section --------*/
-	.contact-bar {
-		width: 90%;
-		margin: auto;
-	}
-
-	/*-------- Modal Section --------*/
-	.main-modal {
-		height: 100%;
-		position: fixed;
-		top: 0;
-		display: none;
-		background-color: rgba(0, 0, 0, 0.5);
-	}
-}
-
-/*-------- Tablet Response --------*/
-@media only screen and (max-width: 1050px) and (min-width: 500px) {
-	/*-------- Tablet Framework --------*/
-	.section-header {
-
-	}
-
-	.content-container:not(:first-child) {
-		justify-content: space-around;
-	}
-
-	/*-------- Portfolio Section --------*/
-	.picture-grid {
-		width: 90%;
-		background: none;
-	}
-
-	.cell {
-		cursor: pointer;
-		width: 10.00rem;
-		height: 10.00rem;
-		border: 1px solid #AAA;
-		overflow: hidden;
-	}
-
-	.cell img {
-		height: 100%;
-	}
-
-
-}
-
-/*-------- PC Response --------*/
-@media only screen and (min-width: 800px) {
-	#mobileBarButton {
-		display: none;
-	}
-
-	.navbutton {
-		display: flex;
-		width: 6.00rem;
-	}
-}
-
-/* TODO Add custom scrollbar. */
