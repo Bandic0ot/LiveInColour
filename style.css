@@ -68,6 +68,20 @@ body {
 	width: 15.00rem;
 	height: 12.50rem;
 	border: 4px solid rgba(255, 255, 255, 0.4);
+	overflow: hidden;
+}
+
+.img-cell {
+	height: 100%;
+}
+
+.img-cell:hover {
+	transform: scale(1.15);
+	-webkit-transition: 700ms;
+	-webkit-transition-timing-function: ease-in-out;
+	transition: 700ms;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
 }
 
 .media-button {
@@ -75,12 +89,16 @@ body {
 	height: 4.75rem;
 }
 
+.media-button:hover {
+	cursor: pointer;
+}
+
 .main-modal {
 	height: 100%;
 	position: fixed;
 	top: 0;
 	display: none;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-image {

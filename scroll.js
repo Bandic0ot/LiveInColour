@@ -181,12 +181,15 @@ $(document).ready(function() {
         localStorage.setItem("storedMainText", $(mainText).css("opacity"));
       }
 
+      // Remove the text if the opacity is 0, no point keeping it around.
+      // Otherwise display it with the appropriate opacity.
       if($(mainText).css("opacity") <= 0) {
         $(mainText).css("display", "none");
       } else {
         $(mainText).css("display", "inline");
       }
 
+      // Adjust the opacity of the navbar based on how much the page is scrolled.
       if(scrollFactor < 0.8) {
         $(nav).css("background-color", "rgba(45, 45, 45, " + scrollFactor + ")");
       }

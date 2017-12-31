@@ -1,4 +1,5 @@
 //-------- Variables --------
+var nav = document.getElementById("navBar");
 var modal = document.getElementById("mainModal");
 var image = document.getElementById("modalImage");
 var cell = document.getElementsByClassName("md-thumbnail");
@@ -38,12 +39,14 @@ function selectModal(x) {
       break;
   }
 
+    navBar.style.display = "none";
     modal.style.display = "flex";
 }
 
 window.onclick = function(event) {
     if (event.target == modal || event.target == close) {
         modal.style.display = "none";
+        navBar.style.display = "flex";
     }
 }
 
