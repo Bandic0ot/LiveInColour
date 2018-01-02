@@ -13,12 +13,12 @@ var menuIsOpen = false;
 
 //-------- Functions --------
 $(document).ready(function() {
-  if(storageAvailable('localStorage')) {
+  if(storageAvailable('sessionStorage')) {
     // Check to see if the page was previously scrolled,
     // if it was set the opacity of the navbar to its
     // previous state.
-    if(localStorage.getItem("storedScroll")) {
-      var storedScroll = localStorage.getItem("storedScroll");
+    if(sessionStorage.getItem("storedScroll")) {
+      var storedScroll = sessionStorage.getItem("storedScroll");
     }
 
     if(storedScroll < 0.8) {
@@ -30,8 +30,8 @@ $(document).ready(function() {
     // Check to see if the page was previously scrolled,
     // if it was set the opacity and display of the
     // main text to its previous state.
-    if(localStorage.getItem("storedMainText")) {
-      var storedMainText = localStorage.getItem("storedMainText");
+    if(sessionStorage.getItem("storedMainText")) {
+      var storedMainText = sessionStorage.getItem("storedMainText");
     }
 
     if(storedMainText <= 0) {
@@ -176,9 +176,9 @@ $(document).ready(function() {
       var scrollFactor = window.pageYOffset / viewportHeight;
       $(mainText).css("opacity", 1 - Math.sqrt(window.pageYOffset) * 0.1);
 
-      if(storageAvailable('localStorage')) {
-        localStorage.setItem("storedScroll", scrollFactor);
-        localStorage.setItem("storedMainText", $(mainText).css("opacity"));
+      if(storageAvailable('sessionStorage')) {
+        sessionStorage.setItem("storedScroll", scrollFactor);
+        sessionStorage.setItem("storedMainText", $(mainText).css("opacity"));
       }
 
       // Remove the text if the opacity is 0, no point keeping it around.
