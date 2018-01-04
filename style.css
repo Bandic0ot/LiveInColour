@@ -11,7 +11,7 @@ body {
 	font-family: "Quicksand", sans-serif;
 
 	/* For debugging */
-	
+
 	/*
 	background: #000 !important;
 	color: #0f0 !important;
@@ -45,19 +45,35 @@ body {
 }
 
 .landing {
-	background: url("images/dandelion.jpg") center/cover no-repeat fixed;
+	background: url("images/dandelion.jpg") center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .about-me {
-	background: url("images/pen.jpg") center/cover no-repeat fixed;
+	background: url("images/pen.jpg") center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .portfolio {
-	background: url("images/coffee.jpg") center/cover no-repeat fixed;
+	background: url("images/coffee.jpg") center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .contact {
-	background: url("images/fire.jpg") center/cover no-repeat fixed;
+	background: url("images/fire.jpg") center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .lg-modal {
