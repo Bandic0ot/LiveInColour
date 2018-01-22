@@ -44,6 +44,10 @@ body {
 	padding-top: 12.00%;
 }
 
+.break {
+  word-break: break-all;
+}
+
 .landing {
 	background: url("images/dandelion.jpg") center no-repeat fixed;
 	-webkit-background-size: cover;
